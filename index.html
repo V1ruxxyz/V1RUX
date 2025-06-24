@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V1RUX – Infect the Mind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #39ff14;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #39ff14;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
+    }
+    .btn-container {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      background: #111;
+      color: #39ff14;
+      border: 1px solid #39ff14;
+      padding: 12px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #39ff14;
+      color: #000;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+    .glitch {
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% {text-shadow: 2px 0 red, -2px 0 blue;}
+      20% {text-shadow: -2px 0 green, 2px 0 purple;}
+      40% {text-shadow: 2px 2px orange, -2px -2px cyan;}
+      60% {text-shadow: -1px 1px red, 1px -1px blue;}
+      80% {text-shadow: 0 0 5px #fff;}
+      100% {text-shadow: 2px 0 red, -2px 0 blue;}
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glitch">V1RUX</h1>
+  <p>"Sadece bilgisayarları değil, düşünceleri de ele geçir."</p>
+
+  <div class="btn-container">
+    <a href="#" class="btn">Enter Protocol</a>
+    <a href="#" class="btn">Whitepaper</a>
+    <a href="#" class="btn">$VX Tokenomics</a>
+    <a href="#" class="btn">Contact</a>
+  </div>
+
+  <footer>
+    © 2025 V1RUX – Code is law. Obey or disappear.
+  </footer>
+</body>
+</html>
